@@ -53,6 +53,9 @@ class Inventory:
 class PaymentProcessor:
     """Processes payments using a dictionary-based payment registry."""
 
+    # The starter program used separate strategy classes for each payment method.
+    # This registry keeps the supported methods in one easy-to-update location.
+
     PAYMENT_METHODS = {
         "credit_card": "Credit Card",
         "paypal": "PayPal",
